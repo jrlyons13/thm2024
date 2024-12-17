@@ -1,0 +1,297 @@
+@session.transaction_read_only
+2024-11-28T15:36:56.236Z 2024-11-28T15:36:56.236517Z	    8 Query	SELECT 1
+2024-11-28T15:36:56.238Z 2024-11-28T15:36:56.238348Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:36:56.238Z 2024-11-28T15:36:56.238599Z	    8 Query	SELECT 1
+2024-11-28T15:36:56.332Z 2024-11-28T15:36:56.332544Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:36:56.332Z 2024-11-28T15:36:56.332901Z	    8 Query	SELECT 1
+2024-11-28T15:36:56.333Z 2024-11-28T15:36:56.333378Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:37:00.059Z 2024-11-28T15:37:00.059729Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:00.062Z 2024-11-28T15:37:00.062126Z	    8 Query	SELECT 1
+2024-11-28T15:37:00.063Z 2024-11-28T15:37:00.063993Z	    8 Query	SELECT count(*) FROM mysql.rds_replication_status WHERE action LIKE '%channel%'
+2024-11-28T15:37:00.080Z 2024-11-28T15:37:00.080078Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:00.112Z 2024-11-28T15:37:00.112332Z	    8 Query	SELECT 1
+2024-11-28T15:37:00.171Z 2024-11-28T15:37:00.171387Z	    8 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:37:00.199Z 2024-11-28T15:37:00.199162Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:00.199Z 2024-11-28T15:37:00.199637Z	    8 Query	SELECT 1
+2024-11-28T15:37:00.204Z 2024-11-28T15:37:00.204320Z	    8 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL and (channel_name IS NULL OR channel_name = '') GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:37:11.234Z 2024-11-28T15:37:11.234549Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:11.234Z 2024-11-28T15:37:11.234902Z	    8 Query	SELECT 1
+2024-11-28T15:37:11.235Z 2024-11-28T15:37:11.235430Z	    8 Query	SELECT 1
+2024-11-28T15:37:11.236Z 2024-11-28T15:37:11.236361Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:11.236Z 2024-11-28T15:37:11.236629Z	    8 Query	SELECT 1
+2024-11-28T15:37:11.238Z 2024-11-28T15:37:11.238514Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:11.238Z 2024-11-28T15:37:11.238779Z	    8 Query	SELECT 1
+2024-11-28T15:37:11.332Z 2024-11-28T15:37:11.332913Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:11.333Z 2024-11-28T15:37:11.333290Z	    8 Query	SELECT 1
+2024-11-28T15:37:11.333Z 2024-11-28T15:37:11.333805Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:37:26.234Z 2024-11-28T15:37:26.234606Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.234Z 2024-11-28T15:37:26.234935Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.235Z 2024-11-28T15:37:26.235374Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.236Z 2024-11-28T15:37:26.236229Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.236Z 2024-11-28T15:37:26.236475Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.238Z 2024-11-28T15:37:26.238218Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.238Z 2024-11-28T15:37:26.238447Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.330Z 2024-11-28T15:37:26.330928Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.331Z 2024-11-28T15:37:26.331276Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.332Z 2024-11-28T15:37:26.332222Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:37:26.386Z 2024-11-28T15:37:26.386462Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.386Z 2024-11-28T15:37:26.386815Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.387Z 2024-11-28T15:37:26.387403Z	    8 Query	select count(*) from information_schema.triggers where trigger_schema='mysql' and trigger_name like 'block_global_grants_%'
+2024-11-28T15:37:26.388Z 2024-11-28T15:37:26.388900Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.389Z 2024-11-28T15:37:26.389176Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.389Z 2024-11-28T15:37:26.389648Z	    8 Query	select info from information_schema.processlist where user = 'rdsadmin' and host like 'localhost%'
+2024-11-28T15:37:26.404Z 2024-11-28T15:37:26.404370Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.404Z 2024-11-28T15:37:26.404714Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.406Z 2024-11-28T15:37:26.406427Z	    8 Query	select count(*) from mysql.user WHERE concat(trim(user), '@', trim(host)) NOT IN ('rdsadmin@localhost') AND (Shutdown_priv = 'y' OR File_priv = 'y' OR Super_priv = 'y')
+2024-11-28T15:37:26.407Z 2024-11-28T15:37:26.407585Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.407Z 2024-11-28T15:37:26.407849Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.408Z 2024-11-28T15:37:26.408324Z	    8 Query	select count(*) from information_schema.routines where ROUTINE_SCHEMA <> 'mysql' and DEFINER = 'rdsadmin@localhost'
+2024-11-28T15:37:26.411Z 2024-11-28T15:37:26.411234Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.411Z 2024-11-28T15:37:26.411540Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.412Z 2024-11-28T15:37:26.412101Z	    8 Query	select count(*) from performance_schema.global_variables
+2024-11-28T15:37:26.418Z 2024-11-28T15:37:26.418894Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.419Z 2024-11-28T15:37:26.419155Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.419Z 2024-11-28T15:37:26.419651Z	    8 Query	select count(*) from performance_schema.global_variables
+2024-11-28T15:37:26.421Z 2024-11-28T15:37:26.421984Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.422Z 2024-11-28T15:37:26.422251Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.422Z 2024-11-28T15:37:26.422716Z	    8 Query	select count(*) from information_schema.events where definer = 'rdsadmin@localhost' and (EVENT_SCHEMA <> 'mysql' or (EVENT_SCHEMA = 'mysql' and EVENT_NAME not in ('ev_rds_gsh_collector', 'ev_rds_gsh_table_rotation', 'ev_gsh_collector', 'ev_gsh_table_rotation')))
+2024-11-28T15:37:26.425Z 2024-11-28T15:37:26.425524Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.425Z 2024-11-28T15:37:26.425756Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.426Z 2024-11-28T15:37:26.426239Z	    8 Query	select TRIGGER_SCHEMA, TRIGGER_NAME, DEFINER from information_schema.triggers where DEFINER = 'rdsadmin@localhost' and (EVENT_OBJECT_SCHEMA <> 'mysql' or (EVENT_OBJECT_SCHEMA = 'mysql' and EVENT_OBJECT_TABLE not in ('user', 'proc', 'global_priv', 'global_grants', 'event', 'rds_upgrade_prechecks', 'default_roles', 'role_edges')))
+2024-11-28T15:37:26.428Z 2024-11-28T15:37:26.428299Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.428Z 2024-11-28T15:37:26.428528Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.428Z 2024-11-28T15:37:26.428994Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.429Z 2024-11-28T15:37:26.429247Z	    8 Query	select concat('`', TO_USER, '`@`', TO_HOST, '`') from mysql.role_edges where FROM_USER = 'rdsadmin' and FROM_HOST = 'localhost' and TO_USER not in ('rdsadmin', 'rdsrepladmin')
+2024-11-28T15:37:26.430Z 2024-11-28T15:37:26.430721Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.430Z 2024-11-28T15:37:26.430946Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.431Z 2024-11-28T15:37:26.431430Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.431Z 2024-11-28T15:37:26.431741Z	    8 Query	select concat('`', USER, '`@`', HOST, '`') from mysql.global_grants where USER not in ('rdsadmin', 'rdsrepladmin', 'rdstopmgr', 'mysql.infoschema', 'mysql.session', 'mysql.sys') and PRIV = 'SYSTEM_USER'
+2024-11-28T15:37:26.432Z 2024-11-28T15:37:26.432885Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.433Z 2024-11-28T15:37:26.433104Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.433Z 2024-11-28T15:37:26.433529Z	    8 Query	select lower(plugin_name) from information_schema.plugins
+2024-11-28T15:37:26.435Z 2024-11-28T15:37:26.435368Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:26.435Z 2024-11-28T15:37:26.435591Z	    8 Query	SELECT 1
+2024-11-28T15:37:26.436Z 2024-11-28T15:37:26.436029Z	    8 Query	select lower(plugin_name) from information_schema.plugins
+2024-11-28T15:37:41.234Z 2024-11-28T15:37:41.234147Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:41.234Z 2024-11-28T15:37:41.234489Z	    8 Query	SELECT 1
+2024-11-28T15:37:41.234Z 2024-11-28T15:37:41.234905Z	    8 Query	SELECT 1
+2024-11-28T15:37:41.235Z 2024-11-28T15:37:41.235770Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:41.236Z 2024-11-28T15:37:41.236029Z	    8 Query	SELECT 1
+2024-11-28T15:37:41.237Z 2024-11-28T15:37:41.237838Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:41.238Z 2024-11-28T15:37:41.238083Z	    8 Query	SELECT 1
+2024-11-28T15:37:41.333Z 2024-11-28T15:37:41.333983Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:41.334Z 2024-11-28T15:37:41.334321Z	    8 Query	SELECT 1
+2024-11-28T15:37:41.334Z 2024-11-28T15:37:41.334758Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:37:56.233Z 2024-11-28T15:37:56.233707Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:56.234Z 2024-11-28T15:37:56.234092Z	    8 Query	SELECT 1
+2024-11-28T15:37:56.234Z 2024-11-28T15:37:56.234567Z	    8 Query	SELECT 1
+2024-11-28T15:37:56.236Z 2024-11-28T15:37:56.236105Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:56.236Z 2024-11-28T15:37:56.236374Z	    8 Query	SELECT 1
+2024-11-28T15:37:56.238Z 2024-11-28T15:37:56.238435Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:56.238Z 2024-11-28T15:37:56.238721Z	    8 Query	SELECT 1
+2024-11-28T15:37:56.318Z 2024-11-28T15:37:56.318586Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:37:56.318Z 2024-11-28T15:37:56.318924Z	    8 Query	SELECT 1
+2024-11-28T15:37:56.319Z 2024-11-28T15:37:56.319405Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:38:00.085Z 2024-11-28T15:38:00.085541Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:00.193Z 2024-11-28T15:38:00.193907Z	    8 Query	SELECT 1
+2024-11-28T15:38:00.252Z 2024-11-28T15:38:00.252911Z	    8 Query	SELECT count(*) FROM mysql.rds_replication_status WHERE action LIKE '%channel%'
+2024-11-28T15:38:00.257Z 2024-11-28T15:38:00.257959Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:00.258Z 2024-11-28T15:38:00.258397Z	    8 Query	SELECT 1
+2024-11-28T15:38:00.259Z 2024-11-28T15:38:00.259128Z	    8 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:38:00.261Z 2024-11-28T15:38:00.261284Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:00.261Z 2024-11-28T15:38:00.261930Z	    8 Query	SELECT 1
+2024-11-28T15:38:00.262Z 2024-11-28T15:38:00.262668Z	    8 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL and (channel_name IS NULL OR channel_name = '') GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:38:11.234Z 2024-11-28T15:38:11.234343Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:11.234Z 2024-11-28T15:38:11.234700Z	    8 Query	SELECT 1
+2024-11-28T15:38:11.235Z 2024-11-28T15:38:11.235288Z	    8 Query	SELECT 1
+2024-11-28T15:38:11.236Z 2024-11-28T15:38:11.236307Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:11.236Z 2024-11-28T15:38:11.236659Z	    8 Query	SELECT 1
+2024-11-28T15:38:11.238Z 2024-11-28T15:38:11.238658Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:11.238Z 2024-11-28T15:38:11.238976Z	    8 Query	SELECT 1
+2024-11-28T15:38:11.326Z 2024-11-28T15:38:11.326470Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:11.326Z 2024-11-28T15:38:11.326810Z	    8 Query	SELECT 1
+2024-11-28T15:38:11.327Z 2024-11-28T15:38:11.327290Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:38:26.233Z 2024-11-28T15:38:26.233542Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:26.233Z 2024-11-28T15:38:26.233903Z	    8 Query	SELECT 1
+2024-11-28T15:38:26.234Z 2024-11-28T15:38:26.234456Z	    8 Query	SELECT 1
+2024-11-28T15:38:26.235Z 2024-11-28T15:38:26.235389Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:26.235Z 2024-11-28T15:38:26.235669Z	    8 Query	SELECT 1
+2024-11-28T15:38:26.237Z 2024-11-28T15:38:26.237546Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:26.237Z 2024-11-28T15:38:26.237823Z	    8 Query	SELECT 1
+2024-11-28T15:38:26.320Z 2024-11-28T15:38:26.320303Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:26.320Z 2024-11-28T15:38:26.320637Z	    8 Query	SELECT 1
+2024-11-28T15:38:26.321Z 2024-11-28T15:38:26.321090Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:38:41.233Z 2024-11-28T15:38:41.233397Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.233Z 2024-11-28T15:38:41.233745Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.234Z 2024-11-28T15:38:41.234198Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.235Z 2024-11-28T15:38:41.235053Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.235Z 2024-11-28T15:38:41.235323Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.237Z 2024-11-28T15:38:41.237067Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.237Z 2024-11-28T15:38:41.237293Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.239Z 2024-11-28T15:38:41.239490Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.239Z 2024-11-28T15:38:41.239763Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.241Z 2024-11-28T15:38:41.241438Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.241Z 2024-11-28T15:38:41.241689Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.242Z 2024-11-28T15:38:41.242094Z	    8 Query	use mysql
+2024-11-28T15:38:41.242Z 2024-11-28T15:38:41.242805Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.243Z 2024-11-28T15:38:41.243035Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.243Z 2024-11-28T15:38:41.243973Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.246Z 2024-11-28T15:38:41.246840Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.247Z 2024-11-28T15:38:41.247070Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.247Z 2024-11-28T15:38:41.247512Z	    8 Query	COMMIT
+2024-11-28T15:38:41.338Z 2024-11-28T15:38:41.338514Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:41.338Z 2024-11-28T15:38:41.338872Z	    8 Query	SELECT 1
+2024-11-28T15:38:41.339Z 2024-11-28T15:38:41.339377Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:38:56.234Z 2024-11-28T15:38:56.234223Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:56.234Z 2024-11-28T15:38:56.234584Z	    8 Query	SELECT 1
+2024-11-28T15:38:56.235Z 2024-11-28T15:38:56.235015Z	    8 Query	SELECT 1
+2024-11-28T15:38:56.235Z 2024-11-28T15:38:56.235915Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:56.236Z 2024-11-28T15:38:56.236191Z	    8 Query	SELECT 1
+2024-11-28T15:38:56.238Z 2024-11-28T15:38:56.238101Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:56.238Z 2024-11-28T15:38:56.238346Z	    8 Query	SELECT 1
+2024-11-28T15:38:56.320Z 2024-11-28T15:38:56.320171Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:38:56.320Z 2024-11-28T15:38:56.320524Z	    8 Query	SELECT 1
+2024-11-28T15:38:56.320Z 2024-11-28T15:38:56.320987Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:39:00.047Z 2024-11-28T15:39:00.047343Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:00.132Z 2024-11-28T15:39:00.132041Z	    8 Query	SELECT 1
+2024-11-28T15:39:00.166Z 2024-11-28T15:39:00.166184Z	    8 Query	SELECT count(*) FROM mysql.rds_replication_status WHERE action LIKE '%channel%'
+2024-11-28T15:39:00.187Z 2024-11-28T15:39:00.187115Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:00.187Z 2024-11-28T15:39:00.187852Z	    8 Query	SELECT 1
+2024-11-28T15:39:00.192Z 2024-11-28T15:39:00.192996Z	    8 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:39:00.195Z 2024-11-28T15:39:00.195129Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:00.195Z 2024-11-28T15:39:00.195572Z	    8 Query	SELECT 1
+2024-11-28T15:39:00.196Z 2024-11-28T15:39:00.196486Z	    8 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL and (channel_name IS NULL OR channel_name = '') GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:39:11.233Z 2024-11-28T15:39:11.233283Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:11.233Z 2024-11-28T15:39:11.233623Z	    8 Query	SELECT 1
+2024-11-28T15:39:11.234Z 2024-11-28T15:39:11.234064Z	    8 Query	SELECT 1
+2024-11-28T15:39:11.234Z 2024-11-28T15:39:11.234888Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:11.235Z 2024-11-28T15:39:11.235126Z	    8 Query	SELECT 1
+2024-11-28T15:39:11.236Z 2024-11-28T15:39:11.236862Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:11.237Z 2024-11-28T15:39:11.237089Z	    8 Query	SELECT 1
+2024-11-28T15:39:11.319Z 2024-11-28T15:39:11.319475Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:11.319Z 2024-11-28T15:39:11.319802Z	    8 Query	SELECT 1
+2024-11-28T15:39:11.320Z 2024-11-28T15:39:11.320265Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:39:26.233Z 2024-11-28T15:39:26.233852Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:26.234Z 2024-11-28T15:39:26.234221Z	    8 Query	SELECT 1
+2024-11-28T15:39:26.234Z 2024-11-28T15:39:26.234797Z	    8 Query	SELECT 1
+2024-11-28T15:39:26.235Z 2024-11-28T15:39:26.235956Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:26.236Z 2024-11-28T15:39:26.236274Z	    8 Query	SELECT 1
+2024-11-28T15:39:26.238Z 2024-11-28T15:39:26.238251Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:26.238Z 2024-11-28T15:39:26.238544Z	    8 Query	SELECT 1
+2024-11-28T15:39:26.322Z 2024-11-28T15:39:26.322296Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:26.322Z 2024-11-28T15:39:26.322635Z	    8 Query	SELECT 1
+2024-11-28T15:39:26.323Z 2024-11-28T15:39:26.323114Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:39:41.233Z 2024-11-28T15:39:41.233495Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:41.233Z 2024-11-28T15:39:41.233863Z	    8 Query	SELECT 1
+2024-11-28T15:39:41.234Z 2024-11-28T15:39:41.234401Z	    8 Query	SELECT 1
+2024-11-28T15:39:41.235Z 2024-11-28T15:39:41.235357Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:41.235Z 2024-11-28T15:39:41.235649Z	    8 Query	SELECT 1
+2024-11-28T15:39:41.237Z 2024-11-28T15:39:41.237526Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:41.237Z 2024-11-28T15:39:41.237760Z	    8 Query	SELECT 1
+2024-11-28T15:39:41.320Z 2024-11-28T15:39:41.320660Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:41.321Z 2024-11-28T15:39:41.321020Z	    8 Query	SELECT 1
+2024-11-28T15:39:41.321Z 2024-11-28T15:39:41.321567Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:39:56.233Z 2024-11-28T15:39:56.233802Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:56.234Z 2024-11-28T15:39:56.234154Z	    8 Query	SELECT 1
+2024-11-28T15:39:56.234Z 2024-11-28T15:39:56.234592Z	    8 Query	SELECT 1
+2024-11-28T15:39:56.235Z 2024-11-28T15:39:56.235502Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:56.235Z 2024-11-28T15:39:56.235751Z	    8 Query	SELECT 1
+2024-11-28T15:39:56.237Z 2024-11-28T15:39:56.237612Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:56.237Z 2024-11-28T15:39:56.237857Z	    8 Query	SELECT 1
+2024-11-28T15:39:56.323Z 2024-11-28T15:39:56.323582Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:39:56.323Z 2024-11-28T15:39:56.323915Z	    8 Query	SELECT 1
+2024-11-28T15:39:56.324Z 2024-11-28T15:39:56.324354Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:40:00.048Z 2024-11-28T15:40:00.048440Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:00.061Z 2024-11-28T15:40:00.061950Z	    8 Query	SELECT 1
+2024-11-28T15:40:00.072Z 2024-11-28T15:40:00.072151Z	    8 Query	SELECT count(*) FROM mysql.rds_replication_status WHERE action LIKE '%channel%'
+2024-11-28T15:40:00.104Z 2024-11-28T15:40:00.104754Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:00.205Z 2024-11-28T15:40:00.205134Z	    8 Query	SELECT 1
+2024-11-28T15:40:00.217Z 2024-11-28T15:40:00.217438Z	    8 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:40:00.220Z 2024-11-28T15:40:00.220086Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:00.223Z 2024-11-28T15:40:00.223982Z	    8 Query	SELECT 1
+2024-11-28T15:40:00.226Z 2024-11-28T15:40:00.226599Z	    8 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL and (channel_name IS NULL OR channel_name = '') GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:40:00.433Z 2024-11-28T15:40:00.433692Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:00.434Z 2024-11-28T15:40:00.434069Z	    8 Query	SELECT 1
+2024-11-28T15:40:00.434Z 2024-11-28T15:40:00.434649Z	    8 Query	flush logs
+2024-11-28T15:40:11.233Z 2024-11-28T15:40:11.233847Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:11.234Z 2024-11-28T15:40:11.234220Z	    8 Query	SELECT 1
+2024-11-28T15:40:11.234Z 2024-11-28T15:40:11.234720Z	    8 Query	SELECT 1
+2024-11-28T15:40:11.235Z 2024-11-28T15:40:11.235807Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:11.236Z 2024-11-28T15:40:11.236111Z	    8 Query	SELECT 1
+2024-11-28T15:40:11.238Z 2024-11-28T15:40:11.238088Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:11.238Z 2024-11-28T15:40:11.238368Z	    8 Query	SELECT 1
+2024-11-28T15:40:11.325Z 2024-11-28T15:40:11.325542Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:11.325Z 2024-11-28T15:40:11.325899Z	    8 Query	SELECT 1
+2024-11-28T15:40:11.326Z 2024-11-28T15:40:11.326379Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:40:26.233Z 2024-11-28T15:40:26.233643Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:26.233Z 2024-11-28T15:40:26.233994Z	    8 Query	SELECT 1
+2024-11-28T15:40:26.234Z 2024-11-28T15:40:26.234540Z	    8 Query	SELECT 1
+2024-11-28T15:40:26.235Z 2024-11-28T15:40:26.235481Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:26.235Z 2024-11-28T15:40:26.235742Z	    8 Query	SELECT 1
+2024-11-28T15:40:26.237Z 2024-11-28T15:40:26.237595Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:26.237Z 2024-11-28T15:40:26.237853Z	    8 Query	SELECT 1
+2024-11-28T15:40:26.326Z 2024-11-28T15:40:26.326629Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:26.326Z 2024-11-28T15:40:26.326973Z	    8 Query	SELECT 1
+2024-11-28T15:40:26.327Z 2024-11-28T15:40:26.327438Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:40:41.233Z 2024-11-28T15:40:41.233471Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:41.233Z 2024-11-28T15:40:41.233812Z	    8 Query	SELECT 1
+2024-11-28T15:40:41.234Z 2024-11-28T15:40:41.234256Z	    8 Query	SELECT 1
+2024-11-28T15:40:41.235Z 2024-11-28T15:40:41.235101Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:41.235Z 2024-11-28T15:40:41.235347Z	    8 Query	SELECT 1
+2024-11-28T15:40:41.237Z 2024-11-28T15:40:41.237122Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:41.237Z 2024-11-28T15:40:41.237357Z	    8 Query	SELECT 1
+2024-11-28T15:40:41.297Z 2024-11-28T15:40:41.297275Z	  277 Connect	rdsadmin@localhost on  using Socket
+2024-11-28T15:40:41.297Z 2024-11-28T15:40:41.297367Z	  277 Statistics	
+2024-11-28T15:40:41.297Z 2024-11-28T15:40:41.297550Z	  277 Quit	
+2024-11-28T15:40:41.379Z 2024-11-28T15:40:41.379904Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:41.380Z 2024-11-28T15:40:41.380267Z	    8 Query	SELECT 1
+2024-11-28T15:40:41.380Z 2024-11-28T15:40:41.380780Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:40:56.233Z 2024-11-28T15:40:56.233438Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:56.233Z 2024-11-28T15:40:56.233785Z	    8 Query	SELECT 1
+2024-11-28T15:40:56.234Z 2024-11-28T15:40:56.234308Z	    8 Query	SELECT 1
+2024-11-28T15:40:56.235Z 2024-11-28T15:40:56.235206Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:56.235Z 2024-11-28T15:40:56.235471Z	    8 Query	SELECT 1
+2024-11-28T15:40:56.237Z 2024-11-28T15:40:56.237243Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:56.237Z 2024-11-28T15:40:56.237475Z	    8 Query	SELECT 1
+2024-11-28T15:40:56.316Z 2024-11-28T15:40:56.316509Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:40:56.316Z 2024-11-28T15:40:56.316845Z	    8 Query	SELECT 1
+2024-11-28T15:40:56.317Z 2024-11-28T15:40:56.317291Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:41:00.053Z 2024-11-28T15:41:00.053300Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:00.053Z 2024-11-28T15:41:00.053781Z	    8 Query	SELECT 1
+2024-11-28T15:41:00.054Z 2024-11-28T15:41:00.054520Z	    8 Query	SELECT count(*) FROM mysql.rds_replication_status WHERE action LIKE '%channel%'
+2024-11-28T15:41:00.056Z 2024-11-28T15:41:00.056614Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:00.134Z 2024-11-28T15:41:00.134564Z	    8 Query	SELECT 1
+2024-11-28T15:41:00.167Z 2024-11-28T15:41:00.167127Z	    8 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:41:00.174Z 2024-11-28T15:41:00.174558Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:00.182Z 2024-11-28T15:41:00.182292Z	    8 Query	SELECT 1
+2024-11-28T15:41:00.189Z 2024-11-28T15:41:00.189804Z	    8 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL and (channel_name IS NULL OR channel_name = '') GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:41:11.234Z 2024-11-28T15:41:11.234212Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:11.234Z 2024-11-28T15:41:11.234530Z	    8 Query	SELECT 1
+2024-11-28T15:41:11.234Z 2024-11-28T15:41:11.234966Z	    8 Query	SELECT 1
+2024-11-28T15:41:11.235Z 2024-11-28T15:41:11.235877Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:11.236Z 2024-11-28T15:41:11.236150Z	    8 Query	SELECT 1
+2024-11-28T15:41:11.237Z 2024-11-28T15:41:11.237938Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:11.238Z 2024-11-28T15:41:11.238179Z	    8 Query	SELECT 1
+2024-11-28T15:41:11.353Z 2024-11-28T15:41:11.353606Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:11.353Z 2024-11-28T15:41:11.353946Z	    8 Query	SELECT 1
+2024-11-28T15:41:11.354Z 2024-11-28T15:41:11.354411Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:41:56.234Z 2024-11-28T15:41:56.234181Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:56.234Z 2024-11-28T15:41:56.234512Z	    8 Query	SELECT 1
+2024-11-28T15:41:56.234Z 2024-11-28T15:41:56.234943Z	    8 Query	SELECT 1
+2024-11-28T15:41:56.235Z 2024-11-28T15:41:56.235813Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:56.236Z 2024-11-28T15:41:56.236063Z	    8 Query	SELECT 1
+2024-11-28T15:41:56.237Z 2024-11-28T15:41:56.237808Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:56.238Z 2024-11-28T15:41:56.238038Z	    8 Query	SELECT 1
+2024-11-28T15:41:56.329Z 2024-11-28T15:41:56.329916Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:41:56.330Z 2024-11-28T15:41:56.330267Z	    8 Query	SELECT 1
+2024-11-28T15:41:56.330Z 2024-11-28T15:41:56.330701Z	    8 Query	SELECT @@GLOBAL.read_only
+2024-11-28T15:42:00.075Z 2024-11-28T15:42:00.075794Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:42:00.079Z 2024-11-28T15:42:00.079332Z	    8 Query	SELECT 1
+2024-11-28T15:42:00.112Z 2024-11-28T15:42:00.112551Z	    8 Query	SELECT count(*) FROM mysql.rds_replication_status WHERE action LIKE '%channel%'
+2024-11-28T15:42:00.123Z 2024-11-28T15:42:00.123752Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:42:00.206Z 2024-11-28T15:42:00.206460Z	    8 Query	SELECT 1
+2024-11-28T15:42:00.208Z 2024-11-28T15:42:00.208478Z	    8 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2024-11-28T15:42:00.211Z 2024-11-28T15:42:00.211152Z	    8 Query	SELECT @@session.transaction_read_only
+2024-11-28T15:42:00.219Z 2024-11-28T15:42:00.219464Z	    8 Query	SELECT 1
+2024-11-28T15:42:00.221Z 2024-11-28T15:42:00.221079Z	    8 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL and (channel_name IS NULL OR channel_name = '') GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+ubuntu@tryhackme:~/wareville_logs$ 
